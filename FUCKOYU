@@ -1,0 +1,642 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Reanimation.lua"))()
+warn("Netless Activated!")
+loadstring(game:GetObjects("rbxassetid://5425999987")[1].Source)()
+
+--[[ Script Converted by WafflesAreVeryGood (Nobody#3907 on discord) ]]--
+local plr = game:GetService('Players').LocalPlayer
+local char = plr.Character
+local mouse = plr:GetMouse()
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Tool0 = Instance.new("Tool")
+Folder1 = Instance.new("Folder")
+Sound2 = Instance.new("Sound")
+Model3 = Instance.new("Model")
+Part4 = Instance.new("Part")
+SpecialMesh5 = Instance.new("SpecialMesh")
+ManualWeld6 = Instance.new("ManualWeld")
+ManualWeld7 = Instance.new("ManualWeld")
+ManualWeld8 = Instance.new("ManualWeld")
+WedgePart9 = Instance.new("WedgePart")
+Part10 = Instance.new("Part")
+SpecialMesh11 = Instance.new("SpecialMesh")
+Script12 = Instance.new("Script")
+Part13 = Instance.new("Part")
+ParticleEmitter14 = Instance.new("ParticleEmitter")
+Part15 = Instance.new("Part")
+ParticleEmitter16 = Instance.new("ParticleEmitter")
+Animation17 = Instance.new("Animation")
+Tool0.Name = "Gaster Blaster"
+Tool0.Parent = mas
+Tool0.TextureId = "rbxassetid://382220657"
+Tool0.ToolTip = "Gaster Blaster: Used By Sans"
+Tool0.CanBeDropped = false
+Folder1.Parent = Tool0
+Sound2.Name = "GBSound"
+Sound2.Parent = Folder1
+Sound2.SoundId = "rbxassetid://382265669"
+Sound2.Volume = 1
+Model3.Name = "GB"
+Model3.Parent = Folder1
+Model3.PrimaryPart = Part4
+Part4.Name = "Main"
+Part4.Parent = Model3
+Part4.Material = Enum.Material.SmoothPlastic
+Part4.BrickColor = BrickColor.new("Institutional white")
+Part4.Rotation = Vector3.new(178.669998, -0.049999997, 179.819992)
+Part4.Anchored = true
+Part4.CanCollide = false
+Part4.FormFactor = Enum.FormFactor.Custom
+Part4.Size = Vector3.new(0.200000003, 0.200000003, 0.200000003)
+Part4.CFrame = CFrame.new(9.6476717, 212.837067, 62.5175667, -0.999994874, -0.0030922927, -0.000849041739, -0.00307168509, 0.999724269, -0.0232850946, 0.000920811843, -0.0232823677, -0.99972856)
+Part4.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+Part4.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+Part4.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+Part4.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+Part4.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+Part4.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+Part4.Color = Color3.new(0.972549, 0.972549, 0.972549)
+Part4.Position = Vector3.new(9.6476717, 212.837067, 62.5175667)
+Part4.Orientation = Vector3.new(1.32999992, -179.949997, -0.179999992)
+Part4.Color = Color3.new(0.972549, 0.972549, 0.972549)
+SpecialMesh5.Parent = Part4
+SpecialMesh5.MeshId = "http://www.roblox.com/asset/?id=14028428"
+SpecialMesh5.Scale = Vector3.new(4.23171806, 4.23171759, 4.23171663)
+SpecialMesh5.VertexColor = Vector3.new(1000000, 10000, 10000)
+SpecialMesh5.MeshType = Enum.MeshType.FileMesh
+SpecialMesh5.Scale = Vector3.new(4.23171806, 4.23171759, 4.23171663)
+ManualWeld6.Name = "Weld"
+ManualWeld6.Parent = Part4
+ManualWeld6.C0 = CFrame.new(0, 0, 0, -0.999994874, -0.00307097379, 0.000981842401, -0.00309300236, 0.99972415, -0.0232822727, -0.000910072413, -0.0232851878, -0.999728441)
+ManualWeld6.C1 = CFrame.new(0.225479126, 3.69114685, 0.0936775208, -0.0154458769, 0.34394905, 0.93886131, 0.0187007096, 0.938908398, -0.343658656, -0.999705911, 0.0122492611, -0.0209343527)
+ManualWeld6.Part0 = Part4
+ManualWeld6.Part1 = nil
+ManualWeld7.Name = "Weld"
+ManualWeld7.Parent = Part4
+ManualWeld7.C0 = CFrame.new(0, 0, 0, -0.999994874, -0.00307097379, 0.000981842401, -0.00309300236, 0.99972415, -0.0232822727, -0.000910072413, -0.0232851878, -0.999728441)
+ManualWeld7.C1 = CFrame.new(0.141029358, 4.85009766, 0.616783142, -0.872494459, -0.293409586, 0.390722692, -0.0644136816, 0.861726344, 0.503268003, -0.484359652, 0.413930595, -0.770751119)
+ManualWeld7.Part0 = Part4
+ManualWeld7.Part1 = nil
+ManualWeld8.Name = "Weld"
+ManualWeld8.Parent = Part4
+ManualWeld8.C0 = CFrame.new(0, 0, 0, -0.999994874, -0.00307097379, 0.000981842401, -0.00309300236, 0.99972415, -0.0232822727, -0.000910072413, -0.0232851878, -0.999728441)
+ManualWeld8.C1 = CFrame.new(0.0476670265, 0.962097168, 5.07106781, 1, 3.98733209e-05, -1.65144629e-05, -1.65144629e-05, 0.707063794, 0.707141817, 3.98733209e-05, -0.707141817, 0.707063794)
+ManualWeld8.Part0 = Part4
+ManualWeld8.Part1 = WedgePart9
+WedgePart9.Parent = Model3
+WedgePart9.BrickColor = BrickColor.new("Institutional white")
+WedgePart9.Rotation = Vector3.new(45, 0, 0)
+WedgePart9.CanCollide = false
+WedgePart9.FormFactor = Enum.FormFactor.Symmetric
+WedgePart9.Size = Vector3.new(1.60000014, 1.5999999, 4.4000001)
+WedgePart9.CFrame = CFrame.new(9.59999466, 215.742599, 58.2514572, 1, 1.65165984e-05, -3.98718948e-05, -3.98723896e-05, 0.707119346, -0.707094252, 1.65153942e-05, 0.707094252, 0.707119346)
+WedgePart9.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+WedgePart9.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+WedgePart9.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+WedgePart9.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+WedgePart9.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+WedgePart9.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+WedgePart9.Color = Color3.new(0.972549, 0.972549, 0.972549)
+WedgePart9.Position = Vector3.new(9.59999466, 215.742599, 58.2514572)
+WedgePart9.Orientation = Vector3.new(45, 0, 0)
+WedgePart9.Color = Color3.new(0.972549, 0.972549, 0.972549)
+Part10.Name = "GBBeam"
+Part10.Parent = Folder1
+Part10.Material = Enum.Material.SmoothPlastic
+Part10.BrickColor = BrickColor.new("Institutional white")
+Part10.Rotation = Vector3.new(0, 90, 0)
+Part10.Anchored = true
+Part10.CanCollide = false
+Part10.FormFactor = Enum.FormFactor.Custom
+Part10.Size = Vector3.new(200, 6, 6)
+Part10.CFrame = CFrame.new(-2.50004816, 4.40002823, -1021.19995, 5.34682295e-05, 1.23517841e-13, 1, -4.3159529e-05, 1, 2.30754016e-09, -1, -4.3159529e-05, 5.34682331e-05)
+Part10.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+Part10.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+Part10.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+Part10.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+Part10.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+Part10.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+Part10.Color = Color3.new(1, 1, 1)
+Part10.Position = Vector3.new(-2.50004816, 4.40002823, -1021.19995)
+Part10.Orientation = Vector3.new(0, 90, 0)
+Part10.Color = Color3.new(1, 1, 1)
+SpecialMesh11.Parent = Part10
+SpecialMesh11.MeshType = Enum.MeshType.Cylinder
+Script12.Parent = Part10
+Script12.Disabled = true
+Part13.Name = "HandFlame"
+Part13.Parent = Folder1
+Part13.Transparency = 1
+Part13.Rotation = Vector3.new(0, 0, -30)
+Part13.Anchored = true
+Part13.CanCollide = false
+Part13.FormFactor = Enum.FormFactor.Custom
+Part13.Size = Vector3.new(0.200000003, 0.200000003, 0.200000003)
+Part13.CFrame = CFrame.new(-8.29995918, 203.950241, 50.9999504, 0.866004944, 0.500030637, -2.15781438e-05, -0.500030637, 0.866004944, 3.73764087e-05, 3.73764087e-05, -2.15781438e-05, 1)
+Part13.Position = Vector3.new(-8.29995918, 203.950241, 50.9999504)
+Part13.Orientation = Vector3.new(0, 0, -30)
+ParticleEmitter14.Name = "Flame"
+ParticleEmitter14.Parent = Part13
+ParticleEmitter14.Transparency = NumberSequence.new(0.69999998807907,0.69999998807907,0.94999998807907,1)
+ParticleEmitter14.Rotation = NumberRange.new(-180, 180)
+ParticleEmitter14.Size = NumberSequence.new(0.5,0.5)
+ParticleEmitter14.Color = ColorSequence.new(Color3.new(0, 0.392157, 1),Color3.new(0, 0.392157, 1))
+ParticleEmitter14.LightEmission = 1
+ParticleEmitter14.Texture = "http://www.roblox.com/asset/?id=298319954"
+ParticleEmitter14.ZOffset = 0.5
+ParticleEmitter14.Lifetime = NumberRange.new(3, 3)
+ParticleEmitter14.Rate = 500
+ParticleEmitter14.Speed = NumberRange.new(2, 2)
+ParticleEmitter14.VelocitySpread = 45
+ParticleEmitter14.Color = ColorSequence.new(Color3.new(0, 0.392157, 1),Color3.new(0, 0.392157, 1))
+Part15.Name = "HeadFlame"
+Part15.Parent = Folder1
+Part15.Transparency = 1
+Part15.Rotation = Vector3.new(0, 0, 79.6899948)
+Part15.Anchored = true
+Part15.CanCollide = false
+Part15.FormFactor = Enum.FormFactor.Custom
+Part15.Size = Vector3.new(0.200000003, 0.200000003, 0.200000003)
+Part15.CFrame = CFrame.new(-10.0999317, 211.071381, 50.400013, 0.178991079, -0.983850658, -4.29847787e-05, 0.983850658, 0.178991094, 3.88006174e-06, 3.87649106e-06, -4.29850988e-05, 1)
+Part15.Position = Vector3.new(-10.0999317, 211.071381, 50.400013)
+Part15.Orientation = Vector3.new(0, 0, 79.6899948)
+ParticleEmitter16.Name = "Flame"
+ParticleEmitter16.Parent = Part15
+ParticleEmitter16.Transparency = NumberSequence.new(0.69999998807907,0.89999997615814,1)
+ParticleEmitter16.Rotation = NumberRange.new(-180, 180)
+ParticleEmitter16.Size = NumberSequence.new(0.5,0.5)
+ParticleEmitter16.Color = ColorSequence.new(Color3.new(0, 0.392157, 1),Color3.new(0, 0.392157, 1))
+ParticleEmitter16.LightEmission = 1
+ParticleEmitter16.Texture = "http://www.roblox.com/asset/?id=134531489"
+ParticleEmitter16.Acceleration = Vector3.new(0, 20, 0)
+ParticleEmitter16.Lifetime = NumberRange.new(0.60000002384186, 0.60000002384186)
+ParticleEmitter16.Rate = 500
+ParticleEmitter16.Speed = NumberRange.new(10, 10)
+ParticleEmitter16.Color = ColorSequence.new(Color3.new(0, 0.392157, 1),Color3.new(0, 0.392157, 1))
+Animation17.Name = "GBSend"
+Animation17.Parent = Folder1
+Animation17.AnimationId = "http://www.roblox.com/GBSend-item?id=388238523"
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.Character
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
+Tool0.RequiresHandle = false
+local tool = char["Gaster Blaster"]
+for i,v in pairs(tool.Folder:GetChildren()) do
+	v.Parent = script
+end
+script.Parent = tool
+tool.Parent = plr.Backpack
+local hum=char:WaitForChild("Humanoid")
+local torso=char:WaitForChild("Torso")
+local hrp=char:WaitForChild("HumanoidRootPart")
+local check=false
+local dmg=false
+local combo=false
+local comboing=false
+local gb=script.GB
+local gbsend=hum:LoadAnimation(script.GBSend)
+local equipped=false
+local tool=script.Parent
+local closest=nil
+crosstab={
+	[1]={math.cos(math.rad(45)),math.sin(math.rad(45))},
+	[2]={math.cos(math.rad(135)),math.sin(math.rad(135))},
+	[3]={math.cos(math.rad(225)),math.sin(math.rad(225))},
+	[4]={math.cos(math.rad(315)),math.sin(math.rad(315))}
+}
+local attacklist={}
+local rignore={}
+local lgb=nil
+local rgb=nil
+local lgbbp=nil
+local rgbbp=nil
+local lgbbg=nil
+local rgbbg=nil
+local headf=nil
+local handf=nil
+
+for _,v in pairs(workspace:GetChildren()) do
+	if not v:FindFirstChild("Humanoid") then
+		table.insert(rignore,v)
+	end
+end
+
+function Loop()
+	coroutine.resume(coroutine.create(function()
+		while equipped==true do
+			repeat wait() until rgb:FindFirstChild("Main") and lgb:FindFirstChild("Main")
+			rgb.Main.Velocity = Vector3.new()
+			lgb.Main.Velocity = Vector3.new()
+			rgbbp.Position=(hrp.CFrame*CFrame.new(10,5,0)).p
+			lgbbp.Position=(hrp.CFrame*CFrame.new(-10,5,0)).p
+			rgbbg.CFrame=CFrame.new(rgb.Main.Position,mouse.Hit.p)
+			lgbbg.CFrame=CFrame.new(lgb.Main.Position,mouse.Hit.p)
+			rgb.Main.Anchored = false
+			lgb.Main.Anchored = false
+			wait()
+		end
+	end))
+end
+
+local function PrepareHurt(proj,dmgcheck,dmg)
+	return --[[
+	local ray=Ray.new((proj.CFrame*CFrame.new(-proj.Size.X/2,0,0)).p,(hitpos-(proj.CFrame*CFrame.new(-proj.Size.X/2,0,0)).p).unit*100)
+	for _,v in pairs(workspace:GetChildren()) do
+		if v.Name=="GBBeam" then
+			table.insert(rignore,v)
+		end
+	end
+	local hit=workspace:FindPartOnRayWithIgnoreList(ray,rignore)
+	if hit then
+		if hit.Parent:FindFirstChild("Humanoid") and hit.Parent.Name~=plr.Name then
+			if hit.Parent.Humanoid.Health>0 then
+				hit.Parent.Humanoid:TakeDamage(dmg)
+			end
+		end
+	end]]
+end
+function fakescript(beamasd)
+local script = {Parent = beamasd}
+local key=math.random()
+
+function onTouched(hit)
+	local human = hit.Parent:FindFirstChildOfClass("Humanoid") 
+        --Basically this just checks to see if it is a real player touching this brick.
+	if (human ~= nil) and hit.Parent ~= char then --If it is a real player, then DESTROY THEM!
+		print("y'all")
+		human.Health = human.Health - 7.5*(1-script.Parent.Transparency)
+	end
+end
+
+
+if (script.Parent ~= nil) and (script.Parent.className == "Part") then --Work if in a block
+	connection = script.Parent.Touched:connect(onTouched)
+end
+local beam=script.Parent
+local bp = Instance.new("BodyPosition")
+bp.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+bp.Position = beam.Position
+bp.Parent = beam
+beam.Anchored = false
+coroutine.resume(coroutine.create(function()
+	wait(0.3)
+	for i=1,10 do
+		if not beam:FindFirstChild"Mesh" then return end
+		beam.Mesh.Scale=Vector3.new(1,1-(i/9),1-(i/9))
+		wait()
+	end
+end))
+wait(0.4)
+for i=1,15 do
+	bp.Position = beam.Position
+	beam.Transparency=i/15
+	wait()
+end
+wait()
+beam:Destroy()
+end
+local function FIRE(obj,mode,thitpos)
+	coroutine.resume(coroutine.create(function()
+		if mode=="Normal" then
+			obj.Main.CFrame=hrp.CFrame*CFrame.new(math.random(-100,100),math.random(0,200),math.random(-100,100))
+		end
+		local dmgcheck=false
+		local gbsfx=script.GBSound:Clone()
+		gbsfx.Parent=obj.Main
+		gbsfx:Play()
+		game.Debris:AddItem(gbsfx,3)
+		wait(1)
+		local beam=script.GBBeam:Clone()
+		beam.CFrame=obj.Main.CFrame*CFrame.new(0,-3,1)
+		spawn(function()
+		fakescript(beam)
+		end)
+		beam.Size=Vector3.new(((beam.CFrame*CFrame.new(0,0,-beam.Size.X/2)).p-hitpos).magnitude*2,beam.Size.Y,beam.Size.Z)
+		if mode~="Dual" then
+			beam.CFrame=CFrame.new(beam.Position,thitpos)*CFrame.Angles(0,math.pi/2,0)
+		else
+			beam.CFrame=CFrame.new(beam.Position,mouse.Hit.p)*CFrame.Angles(0,math.pi/2,0)
+		end
+		beam.CFrame=beam.CFrame*CFrame.new(beam.Size.X/2,0,0)
+		beam.Transparency=0
+		local m = Instance.new("SpecialMesh")
+		m.MeshType = "Cylinder"
+		m.Parent = beam
+		beam.Mesh.Scale=Vector3.new(1,1,1)
+		--PrepareHurt(beam,dmgcheck,10)
+		beam.Parent = char
+		if mode=="Dual" then
+		end
+	end))
+end
+
+local function Lerp(obj,kind,nb,total,spec)
+	obj.Main.Anchored=false
+	local bodyp=Instance.new("BodyPosition",obj.Main)
+	bodyp.MaxForce=Vector3.new(math.huge,math.huge,math.huge)
+	bodyp.D=100
+	bodyp.P=1000
+	local gyro=Instance.new("BodyGyro",obj.Main)
+	gyro.MaxTorque=Vector3.new(10000,10000,10000)
+	gyro.D=80
+	if kind=="Front" then
+		obj.CFrame=hrp.CFrame*CFrame.new(math.random(-10,10),math.random(0,5),-5)
+	end
+	coroutine.resume(coroutine.create(function()
+		wait()
+		gyro.CFrame=CFrame.new(obj.Main.Position,hitpos)
+		wait(0.5)
+		gyro.CFrame=CFrame.new(obj.Main.Position,hitpos)
+	end))
+	if kind=="Line" then
+		if total==0 then
+			bodyp.Position=hrp.Position+Vector3.new(0,10,0)	
+		elseif total==2 then
+			if nb==1 then
+				bodyp.Position=hrp.Position+Vector3.new(5,0,4)
+			elseif nb==2 then
+				bodyp.Position=hrp.Position+Vector3.new(-5,0,4)
+			end
+		elseif total==6 then
+			if nb==1 then
+				bodyp.Position=(hrp.CFrame*CFrame.new(-30,1,0)).p
+			elseif nb==2 then
+				bodyp.Position=(hrp.CFrame*CFrame.new(-20,1,0)).p
+			elseif nb==3 then
+				bodyp.Position=(hrp.CFrame*CFrame.new(-10,1,0)).p
+			elseif nb==4 then
+				bodyp.Position=(hrp.CFrame*CFrame.new(10,1,0)).p
+			elseif nb==5 then
+				bodyp.Position=(hrp.CFrame*CFrame.new(20,1,0)).p
+			elseif nb==6 then
+				bodyp.Position=(hrp.CFrame*CFrame.new(30,1,0)).p
+			end
+		end
+	elseif kind=="Circle" then
+		if spec=="Cross" then
+			bodyp.Position=hitpos+Vector3.new(crosstab[nb][1],3/50,crosstab[nb][2])*50
+		elseif spec=="Plus" or spec=="Total" then
+			bodyp.Position=hitpos+Vector3.new(math.cos(math.rad(nb*(360/total))),3/50,math.sin(math.rad(nb*(360/total))))*50
+		end
+	end
+end
+function debris(obj, t)
+	spawn(function()
+		wait(t)
+		for i = 1, 10 do
+			for _,v in pairs(obj:GetChildren()) do
+				if v:IsA("BasePart") and v.Transparency < 1 then
+					v.Transparency = i/10
+				end
+			end
+			game:GetService('RunService').Stepped:wait(0)
+		end
+		for _,v in pairs(obj:GetChildren()) do
+			v:Destroy()
+		end
+	end)
+end
+
+local function PrepareAttack(key)
+	if check==false and hum.Health>0 then
+		if closest==nil then
+			hitpos=mouse.Hit.p
+		else
+			hitpos=closest.Torso.Position
+		end
+		if equipped==true then
+			if key=="q" then
+				combo=true
+			elseif key=="e" then
+				if combo==false then
+					check=true
+					hum.WalkSpeed=0
+					gbsend:Play()
+					local gbc=gb:Clone()
+					gbc.Parent=char
+					gbc.Main.CFrame=hrp.CFrame*CFrame.new(math.random(-100,100),math.random(0,200),math.random(-100,100))
+					Lerp(gbc,"Line",0,0)
+					FIRE(gbc,"Normal",hitpos)
+					hum.WalkSpeed=30
+					debris(gbc, 1.8)
+					if comboing==false then
+						wait(1)
+					else
+						wait(0.25)
+					end
+					check=false
+				elseif combo==true and #attacklist<5 then
+					table.insert(attacklist,key)
+				end
+			elseif key=="r" then
+				if combo==false then
+					check=true
+					hum.WalkSpeed=0
+					gbsend:Play()
+					FIRE(lgb,"Dual",hitpos)
+					FIRE(rgb,"Dual",hitpos)
+					hum.WalkSpeed=30
+					if comboing==false then
+						wait(1.5)
+					else
+						wait(0.325)
+					end
+					check=false
+				elseif combo==true and #attacklist<5 then
+					table.insert(attacklist,key)
+				end
+			elseif key=="t" then
+				if combo==false then
+					check=true
+					hum.WalkSpeed=0
+					gbsend:Play()
+					for i=1,12 do
+						local gbc=gb:Clone()
+						gbc.Parent=char
+						debris(gbc, 1.8)
+						gbc.Main.CFrame=hrp.CFrame*CFrame.new(math.random(-100,100),math.random(0,200),math.random(-100,100))
+						coroutine.resume(coroutine.create(function()
+							Lerp(gbc,"Circle",i,12,"Total")
+							FIRE(gbc,"Normal",hitpos)
+						end))
+						wait(0.05)
+					end
+					hum.WalkSpeed=30
+					if comboing==false then
+						wait(7)
+					else
+						wait(5)
+					end
+					check=false
+				elseif combo==true and #attacklist==4 then
+					table.insert(attacklist,key)
+				end
+			elseif key=="f" then
+				if combo==false then
+					check=true
+					hum.WalkSpeed=0
+					gbsend:Play()
+					for i=1,4 do
+						local gbc=gb:Clone()
+						gbc.Parent=char
+						debris(gbc, 1.8)
+						coroutine.resume(coroutine.create(function()
+							Lerp(gbc,"Circle",i,4,"Plus")
+							FIRE(gbc,"Normal",hitpos)
+						end))
+					end
+					hum.WalkSpeed=30
+					if comboing==false then
+						wait(2)
+					else
+						wait(0.5)
+					end
+					check=false
+				elseif combo==true and #attacklist<5 then
+					table.insert(attacklist,key)
+				end
+			elseif key=="g" then
+				if combo==false then
+					check=true
+					hum.WalkSpeed=0
+					gbsend:Play()
+					for i=1,4 do
+						local gbc=gb:Clone()
+						gbc.Parent=char
+						debris(gbc, 1.8)
+						coroutine.resume(coroutine.create(function()
+							Lerp(gbc,"Circle",i,4,"Cross")
+							FIRE(gbc,"Normal",hitpos)
+						end))
+					end
+					hum.WalkSpeed=30
+					if comboing==false then
+						wait(2)
+					else
+						wait(0.5)
+					end
+					check=false
+				elseif combo==true and #attacklist<5 then
+					table.insert(attacklist,key)
+				end
+			elseif key=="h" then
+				if combo==false then
+					check=true
+					hum.WalkSpeed=0
+					gbsend:Play()
+					for i=1,8 do
+						local gbc=gb:Clone()
+						gbc.Parent=char
+						debris(gbc, 1.8)
+						coroutine.resume(coroutine.create(function()
+							Lerp(gbc,"Circle",i,8,"Total")
+							FIRE(gbc,"Normal",hitpos)
+						end))
+					end
+					hum.WalkSpeed=30
+					if comboing==false then
+						wait(2)
+					else
+						wait(.5)
+					end
+					check=false
+				elseif combo==true and #attacklist<3 then
+					table.insert(attacklist,key)
+				end
+			end
+		end
+	end
+end
+
+mouse.KeyUp:connect(function(key)
+	if key=="q" and combo==true and check==false then
+		combo=false
+		comboing=true
+		for _,v in pairs(attacklist) do
+			PrepareAttack(v)
+		end
+		attacklist={}
+		comboing=false
+		check=true
+		wait(5)
+		check=false
+	end
+end)
+
+mouse.KeyDown:connect(PrepareAttack)
+
+tool.Equipped:connect(function()
+	equipped=true
+	lgb=script.GB:Clone()
+	lgb.Parent=char
+	lgb.Main.Anchored=true
+	rgb=script.GB:Clone()
+	rgb.Parent=char
+	rgb.Main.Anchored=true
+	rgbbp=Instance.new("BodyPosition")
+	rgbbp.MaxForce=Vector3.new(math.huge,math.huge,math.huge)
+	rgbbp.D=200
+	rgbbp.Position = char.Torso.Position
+	rgbbp.P=300
+	lgbbp=Instance.new("BodyPosition")
+	lgbbp.MaxForce=Vector3.new(math.huge,math.huge,math.huge)
+	lgbbp.D=200
+	lgbbp.P=300
+	lgbbp.Position = char.Torso.Position
+	lgbbg=Instance.new("BodyGyro")
+	lgbbg.MaxTorque=Vector3.new(10000,10000,10000)
+	lgbbg.D=400
+	rgbbg=Instance.new("BodyGyro")
+	rgbbg.MaxTorque=Vector3.new(10000,10000,10000)
+	rgbbg.D=400
+	headf=script.HeadFlame:Clone()
+	headf.Parent=char
+	headf.Anchored=false
+	local headfw=Instance.new("Weld",headf)
+	headfw.Part0=char.Head
+	headfw.Part1=headf
+	headfw.C0=CFrame.new(-0.125,0.22,-0.55)*CFrame.Angles(0,0,math.pi/2)
+	handf=script.HandFlame:Clone()
+	handf.Parent=char
+	handf.Anchored=false
+	local handfw=Instance.new("Weld",handf)
+	handfw.Part0=char["Right Arm"]
+	handfw.Part1=handf
+	handfw.C0=CFrame.new(0,-1.25,0)*CFrame.Angles(0,0,-math.pi/4)
+	rgbbp.Position = char.Torso.Position
+	lgbbp.Position = char.Torso.Position
+	rgbbp.Parent = rgb.Main
+	lgbbp.Parent = lgb.Main
+	lgbbg.Parent = lgb.Main
+	rgbbg.Parent = rgb.Main
+	Loop()
+end)
+tool.Unequipped:connect(function()
+	equipped=false
+	lgb:Destroy()
+	rgb:Destroy()
+	headf:Destroy()
+	handf:Destroy()
+end)
